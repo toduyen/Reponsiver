@@ -1,0 +1,18 @@
+{
+    "verbose": true,
+    "ignore": [
+        "node_modules",
+        ".next",
+        ".idea",
+        "tags",
+        "components",
+        "pages",
+        "actions",
+        "containers"
+    ],
+    "watch": [
+        "./**/*",
+        "server.js"
+    ],
+    "ext": "js json scss"
+}

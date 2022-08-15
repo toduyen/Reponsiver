@@ -1,0 +1,205 @@
+@import "../../../styles/_base.scss";
+
+.vth-tooltip {
+  position: relative;
+  display: inline-block;
+
+  >.tooltiptext {
+    visibility: hidden;
+    min-width: 20px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 100;
+    top: -5px;
+    left: 50%;
+    transform: translate3d(-50%, -100%, 0);
+    white-space: nowrap;
+    line-height: initial;
+  }
+  &.whiteBG {
+    >.tooltiptext {
+      padding: 10px;
+      background: white;
+      color: black;
+    }
+  }
+
+  >.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+  &.whiteBG {
+    >.tooltiptext::after {
+      border-color: white transparent transparent transparent;
+    }
+  }
+
+  &.left {
+    .tooltiptext {
+      top: 50%;
+      left: -5px;
+      transform: translate3d(-100%, -50%, 0);
+    }
+    .tooltiptext::after {
+      top: 50%;
+      left: 100%;
+      bottom: auto;
+      right: auto;
+      margin: -5px 0 0 0;
+      border-color: transparent transparent transparent black;
+    }
+    &.whiteBG {
+      >.tooltiptext::after {
+        border-color: transparent transparent transparent white;
+      }
+    }
+  }
+
+  &.right {
+    .tooltiptext {
+      top: 50%;
+      left: auto;
+      right: -5px;
+      transform: translate3d(100%, -50%, 0);
+    }
+    .tooltiptext::after {
+      top: 50%;
+      right: 100%;
+      bottom: auto;
+      left: auto;
+      margin: -5px 0 0 0;
+      border-color: transparent black transparent transparent;
+    }
+    &.whiteBG {
+      >.tooltiptext::after {
+        border-color: transparent white transparent transparent;
+      }
+    }
+  }
+
+  &.bottom {
+    .tooltiptext {
+      top: auto;
+      bottom: -5px;
+      transform: translate3d(-50%, 100%, 0);
+    }
+    .tooltiptext::after {
+      bottom: 100%;
+      right: auto;
+      top: auto;
+      left: 50%;
+      border-color: transparent transparent black transparent;
+    }
+    &.whiteBG {
+      >.tooltiptext::after {
+        border-color: transparent transparent white transparent;
+      }
+    }
+  }
+
+  &.top-left {
+    .tooltiptext {
+      top: -5px;
+      bottom: auto;
+      transform: translate3d(calc(-100% + 15px), -100%, 0);
+    }
+    .tooltiptext::after {
+      top: 100%;
+      right: auto;
+      bottom: auto;
+      left: calc(100% - 15px);
+      border-color: black transparent transparent transparent;
+    }
+    &.whiteBG {
+      >.tooltiptext::after {
+        border-color: white transparent transparent transparent;
+      }
+    }
+  }
+
+  &.top-right {
+    .tooltiptext {
+      top: -5px;
+      bottom: auto;
+      transform: translate3d(-15px, -100%, 0);
+    }
+    .tooltiptext::after {
+      top: 100%;
+      left: auto;
+      bottom: auto;
+      right: calc(100% - 15px);
+      border-color: black transparent transparent transparent;
+    }
+    &.whiteBG {
+      >.tooltiptext::after {
+        border-color: white transparent transparent transparent;
+      }
+    }
+  }
+
+  &.bottom-left {
+    .tooltiptext {
+      top: auto;
+      bottom: -5px;
+      transform: translate3d(-15px, 100%, 0);
+    }
+    .tooltiptext::after {
+      bottom: 100%;
+      right: auto;
+      top: auto;
+      left: 15px;
+      border-color: transparent transparent black transparent;
+    }
+    &.whiteBG {
+      >.tooltiptext::after {
+        border-color: transparent transparent white transparent;
+      }
+    }
+  }
+
+  &.bottom-right {
+    .tooltiptext {
+      top: auto;
+      bottom: -5px;
+      transform: translate3d(calc(-100% + 15px), 100%, 0);
+    }
+    .tooltiptext::after {
+      bottom: 100%;
+      right: auto;
+      top: auto;
+      left: calc(100% - 15px);
+      border-color: transparent transparent black transparent;
+    }
+    &.whiteBG {
+      >.tooltiptext::after {
+        border-color: transparent transparent white transparent;
+      }
+    }
+    &.grayBG{
+      >.tooltiptext::after {
+        border-color: transparent transparent white transparent;
+      } 
+      >.tooltiptext {
+        background-color:#D3D3D3;
+        color: black;
+      }
+    }
+  }
+
+  &:hover {
+    >.tooltiptext {
+      visibility: visible;
+    }
+  }
+}

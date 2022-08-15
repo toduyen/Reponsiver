@@ -1,0 +1,17 @@
+@import "../../../styles/_base.scss";
+
+.selectContainer {
+  box-sizing: border-box;
+  min-width: 100px;
+  border-bottom: 1px $line-color solid;
+  display: inline-block;
+  line-height: 5px;
+  width: 23vw;
+  
+  .ant-select-selection {
+    background-color: #efeeee;
+    border: none;
+    width: 100%;
+  }
+
+}

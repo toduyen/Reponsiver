@@ -1,0 +1,43 @@
+
+.outer-container {
+  overflow: hidden;
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 15px;
+}
+
+.lg-row {
+  display: flex;
+  transform: skewX(-20deg);
+  margin: 0 -15px;
+}
+
+.lg-cell {
+  display: flex;
+  margin: 0 5px;
+  overflow: hidden;
+}
+
+.lg-wide {
+  flex: 1;
+}
+
+.lg-cell > * {  
+  transform: skewX(15deg);
+  margin: 0 -5px;
+  border: none;
+  flex: 1;
+}
+
+button {
+  height: 37px;
+  font-size: 11pt;
+  color: black;
+}
+
+.color1{
+  background: rgb(175 132 84);
+}
+.color2{
+  background: rgb(248 236 203);
+}

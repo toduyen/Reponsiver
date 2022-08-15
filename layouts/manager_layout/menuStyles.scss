@@ -1,0 +1,32 @@
+.menu-container {
+  li span {
+    // font-weight: bold;
+    font-size: 14px;
+  }
+  .ant-menu-submenu-selected {
+    // color: red;
+  }
+  .ant-menu-item-selected {
+    background-color: #ffffff;
+  }
+
+  .ant-menu-item::after {
+    left: 0;
+    right: auto;
+    border-right: 3px solid #ff7418;
+  }
+
+  .ant-menu-submenu-title {
+    height: 60px;
+  }
+
+  .i-menu {
+    margin-left: -20px;
+  }
+}
+
+.sp-menu {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}

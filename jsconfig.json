@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "baseUrl": ".",
+    "paths": {
+      "actions/*": ["actions/*"],
+      "components/*": ["components/*"],
+      "consts/*": ["consts/*"],
+      "containers/*": ["containers/*"],
+      "hocs/*": ["hocs/*"],
+      "layouts/*": ["layouts/*"],
+      "utils/*": ["utils/*"],
+    }
+  },
+  "experimentalDecorators": false
+}

@@ -1,0 +1,320 @@
+.new-dashboard-content {
+    display: flex;
+    overflow: hidden;
+}
+
+.new-dashboard-content .main-chart {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .new-dashboard-content .main-chart .col-12:nth-child(1) .home-chart-box {
+    height: 415px;
+  }
+  
+  .new-dashboard-content .main-chart .col-12:nth-child(2) .home-chart-box {
+    height: 415px;
+  }
+
+  .new-dashboard-content .home-chart-box {
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(229, 229, 229, 0.73);
+    box-shadow: 0px 0px 15px 1px rgba(229, 229, 229, 0.73);
+    margin-bottom: 30px;
+  }
+  .new-dashboard-content .home-chart-box .row .has-pd {
+    padding: 20px 0px;
+  }
+  .new-dashboard-content .home-chart-box .row .col-lg-7 {
+    padding-bottom: 42px;
+    padding-top: 30px;
+  }
+  .new-dashboard-content .home-chart-box .title-chart {
+    background: #E6DFD7;
+    padding: 15px 0px 15px 25px;
+  }
+  .new-dashboard-content .home-chart-box .title-chart h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+  }
+  .new-dashboard-content .home-chart-box .first-pie {
+    width: 275px;
+    height: 275px;
+    margin: auto;
+    position: relative;
+  }
+
+  .new-dashboard-content .home-chart-box .first-pie canvas {
+    margin: 20px 0px;
+  }
+  .new-dashboard-content .home-chart-box .first-pie .count-bg-pie {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: -5;
+  }
+  .new-dashboard-content .home-chart-box .first-pie .count-bg-pie span {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+  }
+  .new-dashboard-content .home-chart-box .first-pie .count-bg-pie h5 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #164396;
+  }
+
+  .new-dashboard-content .home-chart-box .second-pie canvas {
+    padding: 20px 47px;
+    height: 333px !important;
+  }
+
+  .new-dashboard-content .home-chart-box .content-progress {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #F9F9F9;
+    padding: 40px 20px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress.has-pd-bt {
+    padding-bottom: 75px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus {
+    flex: 0 0 34%;
+    text-align: center;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg {
+    flex: 0 0 50%;
+    text-align: left;
+  }
+
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .count {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .count h5 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .count h5 span {
+    display: inline-block;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .subs-content .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .subs-content .info:nth-child(1) h4:before {
+    background: #16966A;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .subs-content .info:nth-child(2) h4:before {
+    background: #00BCD5;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .subs-content .info:nth-child(3) h4:before {
+    background: #FFA726;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .subs-content .info h4 {
+    font-size: 14px;
+    position: relative;
+    padding-left: 20px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .subs-content .info h4::before {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border-radius: 100%;
+    left: 0;
+    top: 1.5px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus.title-bg .subs-content .info span {
+    font-size: 14px;
+    font-size: 18px;
+    padding-bottom: unset;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus span {
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    padding-bottom: 10px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .total-sus h4 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .new-dashboard-content .home-chart-box .content-progress .progress-content {
+    flex: 0 0 66%;
+    padding-left: 20px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content.progress-bg {
+    flex: 0 0 50%;
+  }
+
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .pie-sm {
+    width: 262px;
+    position: absolute;
+    right: -33px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .pie-sm .count-sm-pie {
+    font-size: 15px;
+    display: block;
+    font-weight: bold;
+    color: #094E88;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+  }
+
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box {
+    padding-bottom: 12px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .title {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .title label {
+    font-size: 16px;
+    color: #094E88;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .title span {
+    font-size: 16px;
+    color: #094E88;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .progress {
+    height: 12px;
+    background: #E2E2E2;
+    border-radius: 6.5px;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .progress .progress-bar {
+    width: 0;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .progress .progress-bar.cl-1 {
+    background: #FFA726;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .progress .progress-bar.cl-2 {
+    background: #F38321;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .progress .progress-bar.cl-3 {
+    background: #94EC3D;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .progress .progress-bar.cl-4 {
+    background: #F3C921;
+  }
+  .new-dashboard-content .home-chart-box .content-progress .progress-content .progress-box .progress .progress-bar.cl-5 {
+    background: #169645;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie {
+    height: 100%;
+    display: flex;
+    background: #F9F9F9;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 15px;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 0px;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info {
+    flex: 0 0 33.33%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info h4 {
+    display: block;
+    font-size: 14px;
+    position: relative;
+    padding-left: 15px;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info h4::before {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 100%;
+    left: 0;
+    top: 2.5px;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info:nth-child(1) h4::before {
+    background: #529616;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info:nth-child(2) h4::before {
+    background: #AE8B00;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info:nth-child(3) h4::before {
+    background: #FFB100;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info:nth-child(4) h4::before {
+    background: #ECE03D;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info:nth-child(5) h4::before {
+    background: #A3C857;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-pie .content-sub .info:nth-child(6) h4::before {
+    background: #4a77c9;
+  }
+  .sub-for-pie .content-sub .info:nth-child(6) h4::before {
+    background: #d41cac;
+  }
+  .sub-for-pie .content-sub .info span {
+    font-size: 17px;
+    /* color: #164396; */
+    color: red;
+    padding-left: 10px;
+  }
+
+  .new-dashboard-content .home-chart-box .sub-for-bars {
+    padding-bottom: 10px;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-bars .content-sub {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-bars .content-sub .infor {
+    padding: 0px 6.5px;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-bars .content-sub .infor h4 {
+    font-size: 14px;
+    display: inline-block;
+    position: relative;
+    padding-left: 18px;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-bars .content-sub .infor h4::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    top: 2px;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-bars .content-sub .infor:nth-child(1) h4::before {
+    background: #169638;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-bars .content-sub .infor:nth-child(2) h4::before {
+    background: #7B721D;
+  }
+  .new-dashboard-content .home-chart-box .sub-for-bars .content-sub .infor:nth-child(3) h4::before {
+    background: #FFA726;
+  }
